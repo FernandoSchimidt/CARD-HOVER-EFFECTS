@@ -1,0 +1,40 @@
+.maior {
+
+    background-color: blue;
+    padding: 10px;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+    background: #fff;
+    padding: 10px;
+}
+.menor {
+    text-align: justify;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: blueviolet;
+    margin: 5px;
+}
+
+@media screen and (max-width:926px) {
+    .maior {
+        display: grid;
+        grid-template-columns: 50% 50%;
+     
+        
+    }
+}
+@media screen and (max-width:500px){
+    .maior{
+        display: block;
+    }
+    .menor{
+        margin-top: 15px;
+    }
+}
