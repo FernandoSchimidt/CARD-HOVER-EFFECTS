@@ -1,40 +1,123 @@
+header {
+    min-height: 60px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+    background: #ECECEC;
+    z-index: 2;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li{
+      display: inline;
+  }
+  
+  li a{
+      text-decoration: none;
+  }
+  .rigth{
+      float: right;
+      padding: 20px;
+  }
+  .home{
+      font-size: 40px;
+      font-family: Arial, Helvetica, sans-serif;
+  }
 .maior {
 
-    background-color: blue;
+    background-color: rgb(161, 161, 161);
     padding: 10px;
     margin: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
     display: flex;
+    transition: display 1s;
+}
+
+.header {
+    background-color: white;
+    color: black;
+    text-align: center;
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 1px 1px 1px black;
+    height: 30px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nome {
+    background-color: white;
+    color: black;
+    text-align: center;
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 4px;
+    height: 30px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
-    margin: auto;
+    margin: 200px auto;
     width: 80%;
+    transition: width 1s;
     background: #fff;
     padding: 10px;
 }
+
 .menor {
     text-align: justify;
     padding: 10px;
     border-radius: 5px;
-    background-color: blueviolet;
+    background-color: rgb(75, 74, 77);
+    color: white;
     margin: 5px;
 }
 
 @media screen and (max-width:926px) {
     .maior {
         display: grid;
+        transition: display 1s;
         grid-template-columns: 50% 50%;
-     
-        
+
+
     }
 }
-@media screen and (max-width:500px){
-    .maior{
-        display: block;
+
+@media screen and (max-width:700px) {
+    .container {
+        width: 90%;
+        transition: width 1s;
     }
-    .menor{
+
+    .maior {
+        display: grid;
+        transition: display 1s;
+        grid-template-columns: 50% 50%;
+
+
+    }
+}
+
+@media screen and (max-width:500px) {
+    .maior {
+        display: block;
+        transition: display 1s;
+    }
+
+    .menor {
         margin-top: 15px;
+    }
+
+    .nome {
+        height: 50px;
+        font-size: 20px;
+        text-align: center;
+        line-height: 50px;
     }
 }
